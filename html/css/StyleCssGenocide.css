@@ -70,7 +70,7 @@ input[required] {
 #here{
     color: rgb(212, 45, 84);
 }
-#upperChoice{
+.upperChoice{
     list-style: none;
     display: inline;
     margin: 2em;
