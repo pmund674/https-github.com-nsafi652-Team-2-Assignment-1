@@ -1,0 +1,23 @@
+p small{
+    color: rgb(164, 51, 51);
+}
+input{
+    color: rgb(164, 51, 51);
+}
+label{
+    color: rgb(164, 51, 51);
+}
+html{
+    background-color: beige;
+}
+
+head{
+    color: darkblue;
+}
+
+body{
+    color: dimgray;
+}
+a :hover{
+    color: brown;
+}
