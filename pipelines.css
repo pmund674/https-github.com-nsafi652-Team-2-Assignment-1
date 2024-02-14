@@ -1,4 +1,4 @@
-p small{
+#message{
     color: rgb(164, 51, 51);
 }
 input{
@@ -11,13 +11,39 @@ html{
     background-color: beige;
 }
 
-head{
+h1{
     color: darkblue;
 }
 
 body{
     color: dimgray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
 }
 a :hover{
-    color: brown;
+    color: rgb(28, 5, 93);
+    background-color: rgb(246, 246, 11);
+    opacity: 0.5;
+}
+article::first-letter{
+    color: rgb(0, 17, 17);
+    font-size:x-large;
+}
+div h1 {
+    padding: 0.25em;
+}
+[h1] {
+    cursor: help;
+}
+#here{
+    color: rgb(212, 45, 84);
+}
+
+#reference{
+    
+    display: stripe;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 7em;
 }
