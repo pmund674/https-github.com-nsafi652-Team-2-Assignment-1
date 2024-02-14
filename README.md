@@ -4,9 +4,10 @@ Nicia
 website 
 
 Haniya
-  Genocide.html
-  StyleCssGenocide.css
-  genocidePic.jpg
-  international.jpg
+  - Genocide.html
+  - StyleCssGenocide.css
+  - genocidePic.jpg
+  - international.jpg
+  - helped with the Main.html
 
 Dalkadeep
