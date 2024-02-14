@@ -1,7 +1,11 @@
 # Team-2-Assignment-1
 
 Nicia
-website 
+-pipelines.html
+-pipelines.css
+-Editing
+-helped with the main.html
+-Creating repository
 
 Haniya
   - Genocide.html
@@ -10,4 +14,10 @@ Haniya
   - international.jpg
   - helped with the Main.html
 
-Dalkadeep
+Palakdeep
+  -Assignment1.html
+  -styles.css
+  -styleMain.css
+  -Images
+  -Company Logo
+  -Format for main
