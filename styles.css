@@ -1,0 +1,27 @@
+h1{font-size: 30pt;
+    font-weight: bold;
+    color: darkblue;
+    padding-left: 10px;
+}
+h2, h3{font-size: 22pt;
+    font-weight: bold;
+    color: darkblue;
+    padding-left: 10px;
+}
+a[title] {
+    background-color: beige;
+    padding-left: 10px;
+}
+div p:first-child{
+    background-color: beige;
+    padding-left: 10px;
+}
+body{
+    font-size: 16pt;
+    font-weight: normal;
+    color: dimgray;
+    background-color: beige;
+    padding-left: 10px;
+}
+
+
