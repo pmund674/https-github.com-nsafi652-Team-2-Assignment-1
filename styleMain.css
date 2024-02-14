@@ -9,3 +9,11 @@ body{font-size: 16pt;
     background-color: beige;
     padding-left: 20px;
 }
+#here{
+    color: rgb(212, 45, 84);
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 2em;
+}
