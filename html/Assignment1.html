@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Mental Issues</title>
     <meta charset="UTF-8">
     <meta name ="description" content ="Brief information about Mental Illness">
     <meta name ="keywords" content ="HTML">
     <meta name ="author" content=" Palakdeep Mundi">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Mental Issues</title>
 
      <!-- the less and more sign display is found from https://www.w3schools.com/html/html_entities.asp#:~:text=To%20display%20a%20less%20than,to%20remember%20than%20entity%20numbers. -->
-    <ul>
-        <li><a  href="Main.html"> &lt &lt Main</a></li>
-        <li><a  href="Genocide.html"> &lt &lt Genocide and Ethnic Cleansing</a></li>
-        <li><a  href="Pipelines.html"> &lt &lt Pipelines </a></li>
-        <li><a id="here" href="Assignment1.html">Mental Illness</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a  href="Main.html"> &lt &lt Main</a></li>
+            <li><a  href="Genocide.html"> &lt &lt Genocide and Ethnic Cleansing</a></li>
+            <li><a  href="Pipelines.html"> &lt &lt Pipelines </a></li>
+            <li><a id="here" href="Assignment1.html">Mental Illness</a></li>
+        </ul>
+    </nav>
 
     <nav>
         <figure>
             <img src="images/CompanyLogo.png" alt="Company Logo" width="50" height="50" align="right"/>
-        </figure>
+        </figure>  
     </nav>
 
 </head>
@@ -29,10 +31,12 @@
         <nav>
             <a href="#abc">Go to bottom</a>
         </nav>
-        <h1>Mental Issues </h1>
+        <div class="title-banner">
+            <h1>Mental Issues </h1>
+        </div>
     </header>
     <main>
-        <table>
+        <table class="table-style">
             <tr>
                 <td rowspan="2" colspan="1">
                     <p>
@@ -58,69 +62,76 @@
                     </p>
                 </td>
                 <td rowspan="2" colspan="2">
-                    <figure align="right">
-                        <img src="images/Image01.webp" alt="A painting about the thoughts of a person suffering with mental issues" title="Mental Issues" width="440" height="220" />
+                    <figure>
+                        <img src="images/Image01.webp" alt="A painting about the thoughts of a person suffering with mental issues" title="Mental Issues" width="440" height="220" class="Image1-style"/>
                         <figcaption>&copy; A painting about the thoughts of a person suffering with mental issues</figcaption>
                     </figure>
-
                 </td>
             </tr>
         </table>
         <br/>
-        <h2 id="Symptoms">Symptoms or Signs</h2>
-        <p>
-            <section>
-                <img src="images/image02.jpg" alt=" A poster" title="Mental Health poster" width="400" height="200" align="right">
+        <div class="Signs or Symptoms">
+            <h2 id="Symptoms">Symptoms or Signs</h2>
+            <p>
+                <section>
+                    <img src="images/image02.jpg" alt=" A poster" title="Mental Health poster" width="400" height="200" class="image-style" align="right" class="image-style"/>
 
-                A few examples of the mental issues includes:
-                <ul>
-                    <li>Feeling sad or down</li>
-                    <li>Not having a social circle</li>
-                    <li>Extreme mood swings</li>
-                    <li>Detachment from reality</li>
-                    <li>Excessive anger</li>
-                    <li>Suicidal thinking</li>
-                    <li>Major changes in habits</li>
-                </ul>
-            </section>
-        </p>
+                    <br/>
+
+                    A few examples of the mental issues includes:
+                    <ul>
+                        <li>Feeling sad or down</li>
+                        <li>Not having a social circle</li>
+                        <li>Extreme mood swings</li>
+                        <li>Detachment from reality</li>
+                        <li>Excessive anger</li>
+                        <li>Suicidal thinking</li>
+                        <li>Major changes in habits</li>
+                    </ul>
+                </section>
+            </p>
+        </div>
         <br/>
-        <p>
-            If you need to talk to some professional, enter your details here:
-            <section>
-                <form id="post" method="post" action="mailto: name@mail.com">
-                    <fieldset> Call For Help
-                        <br/>
-                        <legend>Personal Information</legend>
-                        <label>Name*:
-                        <input name="name" type="text" size="25" maxlength="30" placeholder="Last, First"/>
-                        </label>
-                        <br/>
-                        <label>Phone*:
-                        <input type="text" name="phone" placeholder="238-942-1809" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"/>
-                        </label>
-                        <br/>
-                        <label>Email*:
-                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$]" placeholder="name@mail.com"/>
-                        </label>
-                        <br/>
-                        <legend>Did you find the information okay?</legend>
-                        <label></label>
-                        <label>Yes
-                        <input name="Yes" type="radio" id="One-way" checked/>
-                        </label>
-                        <label>No
-                        <input name="No" type="radio" id="Two-way" />
-                        </label>
-                        <input type="submit" value="Submit">
-                    </fieldset>
-                </form>
-                Somebody will contact you soon.
-            </section>
-        </p>
+        <div class="Table">
+            <p>
+                If you need to talk to some professional, enter your details here:
+                <section>
+                    <form id="post" method="post" action="mailto: name@mail.com">
+                        <fieldset> Call For Help
+                            <br/>
+                            <legend>Personal Information</legend>
+                            <label>Name*:
+                            <input name="name" type="text" size="25" maxlength="30" placeholder="Last, First"/>
+                            </label>
+                            <br/>
+                            <label>Phone*:
+                            <input type="text" name="phone" placeholder="238-942-1809" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"/>
+                            </label>
+                            <br/>
+                            <label>Email*:
+                            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$]" placeholder="name@mail.com"/>
+                            </label>
+                            <br/>
+                            <legend>Did you find the information okay?</legend>
+                            <label></label>
+                            <label>Yes
+                            <input name="Yes" type="radio" id="One-way" checked/>
+                            </label>
+                            <br/>
+                            <label>No
+                            <input name="No" type="radio" id="Two-way" />
+                            </label>
+                            <br/>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                    Somebody will contact you soon.
+                </section>
+            </p>
+        </div>
         <section>
             <h2>Treatments</h2>
-            <img src="images/image04.jpg" alt="A picture of medicines" width="300" height="180" align="right"/>
+            <img src="images/image04.jpg" alt="A picture of medicines" width="300" height="180" align="right" class="image-style"/>
             <article>
                 <p>
                     There are many drugs that can end a depressive episode. Then we have therapies, mostly implying Cognitive Behavioural Therapy(CBT), or Psychotherapy (also called talk therapy).
@@ -130,6 +141,8 @@
                 </p>
             </article>
         </section>
+
+        <div class="references">
         <h3>References</h3>
         <p>
             <ul>
@@ -147,6 +160,7 @@
                 <li>Google Images</li>
             </ul>
         </p>
+        </div>
     </main>
     <footer id="#abc">&copy;All rights reserved.
         <br/>

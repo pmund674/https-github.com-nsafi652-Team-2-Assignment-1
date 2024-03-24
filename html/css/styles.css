@@ -1,35 +1,110 @@
-h1{font-size: 30pt;
-    font-weight: bold;
+.title-banner{
+    background-color: rgb(212, 190, 237);
     color: darkblue;
+    text-align: center;
+    text-shadow: 10px;
+    padding: 20px;
+    image-rendering: auto;
+  }
+  .table-style {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cell-image {
+    width: 50%;
+    
+  }
+  
+  .cell-text {
+    width: 50%;
+    
+  }
+  
+  .image-style {
+    width: 400px;
+    height: auto;
     padding-left: 20px;
-}
-h2, h3{font-size: 22pt;
-    font-weight: bold;
+    padding-right: 40px;
+  }
+
+  .Image1-style{
+    width: 400px;
+    height: 200px;
+  }
+  
+  .overview{
+    text-align: center;
+  }
+  body {
+    background-color: beige; 
+    color: dimgrey;
+    background-size: cover;
+    background-position: center;
+  }
+  h1, h2, h3{
     color: darkblue;
-    padding-left: 20px;
-}
-a[title] {
-    background-color: beige;
-    padding-left: 20px;
-}
-div p:first-child{
-    background-color: beige;
-    padding-left: 20px;
-}
-body{
-    font-size: 16pt;
-    font-weight: normal;
-    color: dimgray;
-    background-color: beige;
-    padding-left: 20px;
-}
-#here{
-    color: rgb(212, 45, 84);
-}
-ul li{
+  }
+  title{
+    color: darkblue;
+  }
+  nav ul {
+    list-style-type: none;
+   
+    background-color: beige; 
+  }
+  nav a:hover {
+    background-color: #ddd;
+    color: black; 
+  }
+  nav a {
+    display: inline-block;
+    color: blue; 
+    text-align: left;
+    padding: 10px;   
+  }
+  nav figure{
+    align-items: right;
+    padding-bottom: 20px;
+  }
+  p::first-letter {
+    font-size: 150%;
+    color: rgb(53, 53, 186);
+  }
+  .container p{
+    color: black;
+  }
+  input{
+    border: 2px solid rgb(62, 65, 79);
+  }
+  #here{
+    color: rgb(53, 53, 186);
+  }
+  .upperChoice{
     list-style: none;
     display: inline;
     margin: 2em;
-}
+  }
+  
+  .content {
+      display: block;
+  }
+  
+  @media (min-width: 590px) {
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+  }
+    
+  @media (min-width: 790px) {
+      .content {
+        display: block;
+        max-width: 790px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+  }
 
 
