@@ -16,8 +16,9 @@ h1{
 }
 
 body{
-    color: dimgray;
+    color: darkblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
+
 }
 a :hover{
     color: rgb(28, 5, 93);
@@ -38,12 +39,105 @@ div h1 {
     color: rgb(212, 45, 84);
 }
 
-#reference{
-    
-    display: stripe;
-}
 ul li{
     list-style: none;
     display: inline;
     margin: 2em;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(177, 164, 88);
+    height: 86px;
+
+}
+
+ul li{
+    font-weight: bold;
+    font-size: 13px;
+    color:ivory;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+}
+
+#top{
+    background-color: rgb(190, 175, 94);
+    color: darkblue;
+    text-align: center;
+    padding: 20px;
+    grid-column: auto;
+}
+
+footer{
+    background-color: rgb(177, 164, 88);
+    color: darkblue;
+    font-size: large;
+    padding: 20px;
+
+}
+#topButton{
+    cursor:pointer;
+}
+@media screen and (min-width: 590px){
+    body{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        width:1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item{
+        grid-row: auto;
+    }
+}
+@media screen and (min-width: 790px){
+    
+    #main{
+        display: flex;
+        flex: 1;
+    }
+    #section1{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .item {
+        height: auto;
+    } 
+    #section2{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .item2 {
+        height: auto;
+    }
+    #section3{
+        display:grid;
+        display: flex;
+        grid-template-columns: 3fr 1fr;
+    }
+    .item3 {
+        height: auto;
+    }
+}
+
+.skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width:1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip:focus {
+    position: static;
+    width:auto;
+    height: auto;
 }
