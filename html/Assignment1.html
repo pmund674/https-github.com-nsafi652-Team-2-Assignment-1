@@ -12,63 +12,60 @@
      <!-- the less and more sign display is found from https://www.w3schools.com/html/html_entities.asp#:~:text=To%20display%20a%20less%20than,to%20remember%20than%20entity%20numbers. -->
     <nav>
         <ul>
-            <li><a  href="Main.html"> &lt &lt Main</a></li>
-            <li><a  href="Genocide.html"> &lt &lt Genocide and Ethnic Cleansing</a></li>
-            <li><a  href="Pipelines.html"> &lt &lt Pipelines </a></li>
-            <li><a id="here" href="Assignment1.html">Mental Illness</a></li>
+            <li style="list-style: none; display: inline; margin: 4em;"><a  href="Main.html"> &lt &lt Main</a></li>
+            <li style="list-style: none; display: inline; margin: 4em;"><a  href="Genocide.html"> &lt &lt Genocide and Ethnic Cleansing</a></li>
+            <li style="list-style: none; display: inline; margin: 4em;"><a  href="Pipelines.html"> &lt &lt Pipelines </a></li>
+            <li style="list-style: none; display: inline; margin: 4em;"><a id="here" href="Assignment1.html">Mental Illness</a></li>
         </ul>
     </nav>
 
-    <nav>
-        <figure>
-            <img src="images/CompanyLogo.png" alt="Company Logo" width="50" height="50" align="right"/>
-        </figure>  
-    </nav>
+    <div class="banner">
+        <header>
+            <div class="title-banner">
+                <h1>Mental Issues </h1>
+            </div>
+        </header>
+        <nav>
+            <figure id="top">
+                <img src="images/CompanyLogo.png" alt="Company Logo" width="80" height="80"/>
+            </figure>
+        </nav>
+    </div>
 
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#abc">Go to bottom</a>
-        </nav>
-        <div class="title-banner">
-            <h1>Mental Issues </h1>
-        </div>
-    </header>
-    <main>
-        <table class="table-style">
-            <tr>
-                <td rowspan="2" colspan="1">
-                    <p>
-                        Mental illness, also called mental health disorders, is one of the very big social challenges that so many people struggle with.
-                        "According to World Health Organization(WHO), mental disorders affect one in four people globally at some point in their lives".
-                        Mental illness refers to a wide range of mental health conditions- disorders that affect a person's mood, thinking, and behaviour.
-                        Examples of this illness include depression, anxiety disorders, schizophrenia, eating disorders, and addictive behaviours.
-                        Many people have mental health concerns but these concerns changes into illness when ongoing symptoms and signs keep causing frequent stress and affect the ability to function.
-                        There are mainly two leading causes of bad mental heath:
-                    <br/>
-                        <ul>
-                            <li>Genetics,</li>
-                            <li>Environment</li>
-                        </ul>
-                    </p>
-                    <p> 
-                        Environment is the reason that why mental issues are considered or being called as a social challenge or a social issue because,
-                        it can affect a person's relationships with their friends, or family, or relatives, or co-workers.
-                        This increases burden on the society, surroundings, or economy. This further leads to less productivity, financial strain, increased absenteeism, emotional distress, extra burden, etc.
-                        A lot of people suffer with mental issues, i.e. there is a lot of suffering, but less people are getting it's treatment, or are aware about that mental illness has treatments.
-                        People are now aware about a few mental disorders but are not completely aware about the consequences and it's symptoms which makes it more difficult for people to accept if they are going through something mentally.
-                    <!--All the references, citations will be at the end of this webpage-->
-                    </p>
-                </td>
-                <td rowspan="2" colspan="2">
-                    <figure>
-                        <img src="images/Image01.webp" alt="A painting about the thoughts of a person suffering with mental issues" title="Mental Issues" width="440" height="220" class="Image1-style"/>
-                        <figcaption>&copy; A painting about the thoughts of a person suffering with mental issues</figcaption>
-                    </figure>
-                </td>
-            </tr>
-        </table>
+
+    <main class="main">
+        <section id="section1">
+        <article class="item">
+            <p>
+                Mental illness, also called mental health disorders, is one of the very big social challenges that so many people struggle with.
+                "According to World Health Organization(WHO), mental disorders affect one in four people globally at some point in their lives".
+                Mental illness refers to a wide range of mental health conditions- disorders that affect a person's mood, thinking, and behaviour.
+                Examples of this illness include depression, anxiety disorders, schizophrenia, eating disorders, and addictive behaviours.
+                Many people have mental health concerns but these concerns changes into illness when ongoing symptoms and signs keep causing frequent stress and affect the ability to function.
+                There are mainly two leading causes of bad mental heath:
+            <br/>
+                <ul>
+                    <li>Genetics,</li>
+                    <li>Environment</li>
+                </ul>
+            </p>
+
+            <figure>
+                <img src="images/Image01.webp" alt="A painting about the thoughts of a person suffering with mental issues" title="Mental Issues" width="440" height="220" class="Image1-style"/>
+                <figcaption>&copy; A painting about the thoughts of a person suffering with mental issues</figcaption>
+            </figure>
+
+            <p> 
+                Environment is the reason that why mental issues are considered or being called as a social challenge or a social issue because,
+                it can affect a person's relationships with their friends, or family, or relatives, or co-workers.                        This increases burden on the society, surroundings, or economy. This further leads to less productivity, financial strain, increased absenteeism, emotional distress, extra burden, etc.
+                A lot of people suffer with mental issues, i.e. there is a lot of suffering, but less people are getting it's treatment, or are aware about that mental illness has treatments.
+                People are now aware about a few mental disorders but are not completely aware about the consequences and it's symptoms which makes it more difficult for people to accept if they are going through something mentally.
+                <!--All the references, citations will be at the end of this webpage-->
+            </p>
+        </article>
+        </section>
         <br/>
         <div class="Signs or Symptoms">
             <h2 id="Symptoms">Symptoms or Signs</h2>
@@ -92,48 +89,61 @@
             </p>
         </div>
         <br/>
-        <div class="Table">
+        <section>
+            <article>
             <p>
                 If you need to talk to some professional, enter your details here:
-                <section>
                     <form id="post" method="post" action="mailto: name@mail.com">
                         <fieldset> Call For Help
                             <br/>
                             <legend>Personal Information</legend>
+
                             <label>Name*:
                             <input name="name" type="text" size="25" maxlength="30" placeholder="Last, First"/>
                             </label>
+
                             <br/>
+
                             <label>Phone*:
                             <input type="text" name="phone" placeholder="238-942-1809" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"/>
                             </label>
+
                             <br/>
+                            
                             <label>Email*:
                             <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$]" placeholder="name@mail.com"/>
                             </label>
+                            
                             <br/>
+                            
                             <legend>Did you find the information okay?</legend>
+                            
                             <label></label>
+                            
                             <label>Yes
                             <input name="Yes" type="radio" id="One-way" checked/>
                             </label>
+                            
                             <br/>
+                            
                             <label>No
                             <input name="No" type="radio" id="Two-way" />
                             </label>
+                            
                             <br/>
+                            
                             <input type="submit" value="Submit">
                         </fieldset>
                     </form>
                     Somebody will contact you soon.
-                </section>
-            </p>
-        </div>
+                </p>
+            </article>
+        </section>
         <section>
             <h2>Treatments</h2>
             <img src="images/image04.jpg" alt="A picture of medicines" width="300" height="180" align="right" class="image-style"/>
             <article>
-                <p>
+                <p id="text">
                     There are many drugs that can end a depressive episode. Then we have therapies, mostly implying Cognitive Behavioural Therapy(CBT), or Psychotherapy (also called talk therapy).
                     Other therapies are: electroconvulsive therapy, interpersonal therapy.
                     If a person who is suffering from any mental health disorder, they can also join support groups that help them to talk about their problems.
@@ -143,7 +153,7 @@
         </section>
 
         <div class="references">
-        <h3>References</h3>
+        <h2>References</h2>
         <p>
             <ul>
                 <li>
@@ -162,9 +172,11 @@
         </p>
         </div>
     </main>
-    <footer id="#abc">&copy;All rights reserved.
-        <br/>
-        <a href="#pqr"> Go to top</a>
-    </footer>
+    <div class="footer">
+        <footer>&copy;All rights reserved.
+            <br/>
+            <a id="topButton" href="#top" type="button"> Go to top</a>
+        </footer>
+    </div>
 </body>
 </html>

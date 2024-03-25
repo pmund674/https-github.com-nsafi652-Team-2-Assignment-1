@@ -1,28 +1,18 @@
+html{
+    background-color: beige;
+}
+
 .title-banner{
     background-color: rgb(212, 190, 237);
     color: darkblue;
     text-align: center;
     text-shadow: 10px;
     padding: 20px;
-    image-rendering: auto;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
   }
-  .table-style {
-    width: 100%;
-    height: auto;
-  }
-  
-  .cell-image {
-    width: 50%;
-    
-  }
-  
-  .cell-text {
-    width: 50%;
-    
-  }
-  
   .image-style {
-    width: 400px;
+    width: 300px;
     height: auto;
     padding-left: 20px;
     padding-right: 40px;
@@ -31,18 +21,16 @@
   .Image1-style{
     width: 400px;
     height: 200px;
+    align-items: center;
   }
   
-  .overview{
-    text-align: center;
-  }
   body {
     background-color: beige; 
     color: dimgrey;
     background-size: cover;
     background-position: center;
   }
-  h1, h2, h3{
+  h1, h2{
     color: darkblue;
   }
   title{
@@ -50,7 +38,6 @@
   }
   nav ul {
     list-style-type: none;
-   
     background-color: beige; 
   }
   nav a:hover {
@@ -59,7 +46,7 @@
   }
   nav a {
     display: inline-block;
-    color: blue; 
+    color: rgb(0, 0, 255); 
     text-align: left;
     padding: 10px;   
   }
@@ -69,16 +56,29 @@
   }
   p::first-letter {
     font-size: 150%;
-    color: rgb(53, 53, 186);
+    color: darkblue;
   }
   .container p{
     color: black;
+  }
+  .banner{
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+  }
+  #top{
+    background-color: rgb(212, 190, 237);
+    color: darkblue;
+    text-align: center;
+    text-shadow: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
   }
   input{
     border: 2px solid rgb(62, 65, 79);
   }
   #here{
-    color: rgb(53, 53, 186);
+    color: rgb(255, 0, 0);
   }
   .upperChoice{
     list-style: none;
@@ -89,22 +89,59 @@
   .content {
       display: block;
   }
-  
-  @media (min-width: 590px) {
-      .content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-      }
+  .footer{
+    background-color: rgb(212, 190, 237);
+    align-items: center;
   }
+  .references{
+    text-align: left;
+  }
+  #topButton{
+    cursor:pointer;
+  }
+ 
+@media screen and (min-width: 590px){
+    body{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        width:1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item{
+        grid-row: auto;
+    }
+}
     
-  @media (min-width: 790px) {
-      .content {
-        display: block;
-        max-width: 790px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-  }
+@media screen and (min-width: 790px){
+    
+    #main{
+        display: flex;
+        flex: 1;
+    }
+    #section1{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .item {
+        height: auto;
+    } 
+    #section2{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .item2 {
+        height: auto;
+    }
+    #section3{
+        display:grid;
+        display: flex;
+        grid-template-columns: 3fr 1fr;
+    }
+    .item3 {
+        height: auto;
+    }
+}
 
 
